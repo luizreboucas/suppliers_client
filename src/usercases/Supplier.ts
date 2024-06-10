@@ -48,6 +48,6 @@ export default class SupplierImpl implements Supplier{
             throw new Error('fornecedor não encontrado')
         }
         const response =  await deleteSupplier(this.id);
-        return response.data;
+        return response.data.content;
     }
 }

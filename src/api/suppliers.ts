@@ -28,6 +28,6 @@ export const updateSupplier = (supplierData: Supplier) =>{
 }
 
 export const deleteSupplier = (id: number) => {
-    const response = request.delete(`/${id}`);
+    const response = request.delete(`/suppliers/${id}`);
     return response
 }
